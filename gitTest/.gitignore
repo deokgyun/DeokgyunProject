@@ -31,3 +31,32 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/*
+window.addEventListener("keyup", (e) => {
+  const xhr = new XMLHttpRequest();
+  var data = {
+    email : document.getElementById("email").value
+  };
+  var regex = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z]+/;   
+  
+  if(data.email == ''){
+    
+    document.getElementById("notify").innerText = '';
+    
+  } else if(!regex.test(data.email)){
+    
+    document.getElementById("notify").innerText = '유효한 이메일이 아닙니다.';
+    document.getElementById("notify").style.color = 'red';
+    document.getElementById("emailButton").setAttribute("disabled", true);
+    
+  } else {
+  
+    document.getElementById("emailButton").removeAttribute("disabled");
+    document.getElementById("notify").innerText = '유효한 이메일입니다.';
+    document.getElementById("notify").style.color = 'blue';
+
+  };
+  
+});
+*/
